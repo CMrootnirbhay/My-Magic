@@ -1,0 +1,92 @@
+<!DOCTYPE html><html><head>
+<meta charset="utf-8">
+        <link href="css/academyLabHeader.css" rel="stylesheet">
+        <link href="css/labsBlog.css" rel="stylesheet">
+        <title>Reflected XSS into HTML context with nothing encoded</title>
+    </head>
+    <body>
+        <script src="js/labHeader.js"></script>
+        <div id="academyLabHeader">
+            <section class="academyLabBanner">
+                <div class="container">
+                    <div class="logo"></div>
+                        <div class="title-container">
+                            <h2>Reflected XSS into HTML context with nothing encoded</h2>
+                            <a class="link-back" href="https://portswigger.net/web-security/cross-site-scripting/reflected/lab-html-context-nothing-encoded">
+                                Back�to�lab�description�
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 28 30" enable-background="new 0 0 28 30" xml:space="preserve" title="back-arrow">
+                                    <g>
+                                        <polygon points="1.4,0 0,1.2 12.6,15 0,28.8 1.4,30 15.1,15"></polygon>
+                                        <polygon points="14.3,0 12.9,1.2 25.6,15 12.9,28.8 14.3,30 28,15"></polygon>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="widgetcontainer-lab-status is-notsolved">
+                            <span>LAB</span>
+                            <p>Not solved</p>
+                            <span class="lab-status-icon"></span>
+                        </div>
+                    </div>
+                </section></div>
+            
+        
+        <div theme="blog">
+            <section class="maincontainer">
+                <div class="container is-page">
+                    <header class="navigation-header">
+                        <section class="top-links">
+                            <a href="/">Home</a><p>|</p>
+                        </section>
+                    </header>
+                    <header class="notification-header">
+                    </header>
+                    <section class="blog-header">
+                        <img src="images/blog.svg">
+                    </section>
+                    <section class="search">
+                        <form action="/" method="GET">
+                            <input type="text" placeholder="Search the blog..." name="search">
+                            <button type="submit" class="button">Search</button>
+                        </form>
+                    </section>
+                    <section class="blog-list">
+                        <div class="blog-post">
+                        <a href="/post?postId=2"><img src="images/45.jpg"></a>
+                        <h2>Perseverance</h2>
+                        <p>To coin a famous phrase - life is suffering. Not a cheerful start, but true none the less. However, ambition, joy and passion couldn't exist without a bit of suffering and like it or not they are all parts of...</p>
+                        <a class="button is-small" href="/post?postId=2">View post</a>
+                        </div>
+                        <div class="blog-post">
+                        <a href="/post?postId=1"><img src="images/51.jpg"></a>
+                        <h2>Favours</h2>
+                        <p>Favours are a tricky thing. Some people seem to ask for them all the time, some people hardly ever do and some people outright refuse to ever ask for one as they don't want to end up owing someone.</p>
+                        <a class="button is-small" href="/post?postId=1">View post</a>
+                        </div>
+                        <div class="blog-post">
+                        <a href="/post?postId=5"><img src="images/7.jpg"></a>
+                        <h2>Faking It! - InstaCam</h2>
+                        <p>People are going to extreme lengths to pull the wool over their friends' eyes on Social Media. If you've ever clicked your way through family photos and the perfect summer and winter getaway pics of your friends on Instagram then...</p>
+                        <a class="button is-small" href="/post?postId=5">View post</a>
+                        </div>
+                        <div class="blog-post">
+                        <a href="/post?postId=3"><img src="images/24.jpg"></a>
+                        <h2>The Reverse Bucket List</h2>
+                        <p>I have yet to create a bucket list, mainly because I'm not very adventurous and don't want to do anything that will scare the pants off me. With my weekends wasting away with a huge dose of apathy and only...</p>
+                        <a class="button is-small" href="/post?postId=3">View post</a>
+                        </div>
+                        <div class="blog-post">
+                        <a href="/post?postId=4"><img src="images/47.jpg"></a>
+                        <h2>Coping with Hangovers</h2>
+                        <p>They say certain things get better with age, alas, not hangovers. I suppose the easiest thing to do would be to say well, just don't drink in the first place but as well all know, human nature dictates that we...</p>
+                        <a class="button is-small" href="/post?postId=4">View post</a>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <div class="footer-wrapper">
+            </div>
+        </div>
+    
+
+</body></html>
